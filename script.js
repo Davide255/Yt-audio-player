@@ -1,8 +1,5 @@
-function search(ele) {
-    if(event.key === 'Enter') {
-        play_video(ele.value);
-        document.getElementById("video_id").blur();   
-    }
+function search() {
+    play_video(document.getElementById("video_id").text);
 }
 
 function play_video(vid){
