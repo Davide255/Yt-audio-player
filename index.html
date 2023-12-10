@@ -3,8 +3,10 @@
   <head>
   </head>
   <body>
-    <input type="text" placeholder="input the video id" id="video_id"/>
-    <button text="search" onclick="search()"></button>
+    <div style="display: block;height: 50px; width: 100%;">
+        <input type="text" placeholder="input the video id" id="video_id"/>
+        <button id="search_button" onclick="search()">search</button>
+    </div>
     <h2 id="logger">Logger</h5>
     <audio id="youtube" controls autoplay loop></audio>
     <style>
@@ -13,9 +15,12 @@
         }
         #video_id {
             height: 50px;
-            width: 100%;
+            width: 30%;
         }
-        
+        #search_button{
+            height: 50px;
+            width: 30%;
+        }
         #logger {
             color: red;
         }
