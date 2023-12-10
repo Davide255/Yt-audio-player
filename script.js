@@ -1,5 +1,5 @@
 function search() {
-    play_video(document.getElementById("video_id").text);
+    play_video(document.getElementById("video_id").value);
 }
 
 function play_video(vid){
@@ -9,7 +9,7 @@ function play_video(vid){
     var logger = document.getElementById("logger");
 
     fetch("https://images" + ~~(Math.random() * 33) + "-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=" + encodeURIComponent("https://www.youtube.com/watch?hl=en&v=" + vid)).then(response => {
-        logger.innerHTML = 'response was' + response.status;
+        logger.innerHTML = 'response was ' + response.status;
         if (response.ok) {
             response.text().then(data => {
 
