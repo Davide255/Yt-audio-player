@@ -1,4 +1,4 @@
-var vid = "kJQP7kiw5Fk",
+var vid = "3r_Z5AYJJd4",
 audio_streams = {},
 audio_tag = document.getElementById('youtube');
 
