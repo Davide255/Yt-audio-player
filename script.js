@@ -5,7 +5,7 @@ audio_tag = document.getElementById('youtube');
 var logger = document.getElementById("logger");
 
 fetch("https://images" + ~~(Math.random() * 33) + "-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=" + encodeURIComponent("https://www.youtube.com/watch?hl=en&v=" + vid)).then(response => {
-    logger.innerHTML = "response was ${response.status}!";
+    logger.innerHTML = 'response was' + response.status;
     if (response.ok) {
         response.text().then(data => {
 
